@@ -5,10 +5,6 @@
 **Effective date:** 1 September 2026
 **Last updated:** 1 September 2026
 
-> These Terms are a template prepared for xBitsNL Gaming. Review them — and have them
-> checked by a qualified adviser — before publishing, and fill in the bracketed
-> placeholders (`[…]`).
-
 ---
 
 ## 1. Acceptance of these Terms
@@ -78,7 +74,7 @@ When you use online leaderboards, your Play Games profile name and submitted sco
 sent to Google Play Games Services.
 
 Our handling of personal data is described in our Privacy Policy:
-**[link to your published Privacy Policy]**. Please read it. By using online features
+**[Privacy Policy](https://raw.githubusercontent.com/jayofelony/kings-privacy/refs/heads/main/PRIVACY.md)**. Please read it. By using online features
 you also consent to Google's processing of your Play Games data as described in
 Google's Privacy Policy.
 
@@ -160,8 +156,7 @@ The EU Online Dispute Resolution platform is available at
 
 xBitsNL Gaming
 Attn: Jeroen Oudshoorn
-Email: **[your contact email, e.g. support@xbitsnl.nl]**
-[postal address, if you wish to provide one]
+Email: **[oudshoorn.jeroen@gmail.com]**
 
 ---
 
