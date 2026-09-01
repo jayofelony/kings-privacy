@@ -2,7 +2,7 @@
 
 **Last Updated:** August 31, 2026
 
-Jeroen Oudshoorn ("we," "us," or "our") operates Kings (the "Game"). This Privacy Policy explains our practices regarding data collection and the third-party services used within our Game.
+xBitsNL Gaming ("we," "us," or "our") operates Kings (the "Game"). This Privacy Policy explains our practices regarding data collection and the third-party services used within our Game.
 
 ---
 
