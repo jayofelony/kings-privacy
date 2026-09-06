@@ -26,16 +26,18 @@
   <p class="meta">
     Applies to: <strong>Kings</strong> for Android (package <code>com.jayofelony.kings</code>),
     published by xBitsNL&nbsp;Gaming.<br>
-    Effective date: 1&nbsp;September&nbsp;2026 &nbsp;&middot;&nbsp; Last updated: 1&nbsp;September&nbsp;2026
+    Effective date: 1&nbsp;September&nbsp;2026 &nbsp;&middot;&nbsp; Last updated: 6&nbsp;September&nbsp;2026
   </p>
 
   <div class="card">
     <h3>In short</h3>
     <ul>
-      <li>Kings is a single-player puzzle game. It does <strong>not</strong> require an account and has <strong>no ads</strong>.</li>
+      <li>Kings is a single-player puzzle game. It does <strong>not</strong> require an account and does not ask for your name, email, contacts, photos, or location.</li>
       <li>Your settings and puzzle progress are stored <strong>only on your device</strong>. We never receive them.</li>
-      <li>The only data that leaves your device is when <strong>you choose to sign in to Google&nbsp;Play&nbsp;Games</strong> for leaderboards.</li>
-      <li>We use no analytics, no advertising, and no third-party tracking SDKs.</li>
+      <li>The app shows <strong>ads from Google&nbsp;AdMob</strong> and uses <strong>Google&nbsp;Firebase</strong> (Analytics and In-App Messaging). These Google services collect device and usage data, including an advertising / app identifier, as described below.</li>
+      <li>You can remove ads with a <strong>one-time in-app purchase</strong>, handled by Google&nbsp;Play. In the EEA and UK you are asked for ad consent before any ads load.</li>
+      <li>Optional <strong>Google&nbsp;Play&nbsp;Games</strong> sign-in enables leaderboards.</li>
+      <li>We do not sell your personal data.</li>
     </ul>
   </div>
 
@@ -45,23 +47,99 @@
     developer and publisher of Kings. Contact:
     <a href="mailto:oudshoorn.jeroen@gmail.com">oudshoorn.jeroen@gmail.com</a>.
   </p>
+  <p>
+    For advertising, analytics and in-app messaging, Kings uses Google services. Google acts
+    as an independent controller or as our processor depending on the service and your
+    region; each service is also governed by the
+    <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google&nbsp;Privacy&nbsp;Policy</a>.
+  </p>
 
   <h2>2. Data stored on your device</h2>
   <p>
     Kings stores the following on your device only, in the app&rsquo;s private storage (Android
-    <code>DataStore</code>). It is not transmitted to us or to any third party:
+    <code>DataStore</code>). It is not transmitted to us:
   </p>
   <ul>
     <li>an optional <strong>player name</strong> you may type in Settings;</li>
     <li><strong>preferences</strong>: difficulty / board size, crown style, and toggles such as auto-mark and highlight&nbsp;violations;</li>
     <li>your <strong>current saved game</strong>, so a puzzle can be resumed;</li>
-    <li>your <strong>daily-puzzle history</strong>: which dates you solved, your solve times, whether a hint was used, current and best streak, and total solved.</li>
+    <li>your <strong>daily-puzzle history</strong>: which dates you solved, your solve times, whether a hint was used, current and best streak, and total solved;</li>
+    <li>a <strong>&ldquo;remove ads&rdquo; flag</strong> recording whether you have bought the ad-free upgrade, and counters used to pace how often ads are shown;</li>
+    <li>your <strong>ad-consent choice</strong> (stored by Google&rsquo;s consent SDK).</li>
   </ul>
   <p>
     This data is removed when you uninstall the app or clear its storage in Android settings.
   </p>
 
-  <h2>3. Data processed through Google Play Games Services</h2>
+  <h2>3. Advertising (Google AdMob)</h2>
+  <p>
+    Unless you have purchased the ad-free upgrade, Kings displays banner and full-screen
+    (interstitial) ads using <strong>Google&nbsp;AdMob</strong>. To serve, cap and measure ads,
+    the AdMob SDK collects and sends to Google:
+  </p>
+  <ul>
+    <li>your device&rsquo;s <strong>advertising identifier</strong> (Android Advertising ID / App Set ID) and general device information (model, operating-system version, language, coarse region derived from your IP address);</li>
+    <li><strong>ad interaction data</strong>: which ads were requested, shown, clicked, and basic diagnostics;</li>
+    <li>your IP address, which Google uses for ad delivery, frequency capping, security and approximate location.</li>
+  </ul>
+  <p>
+    In the EEA, the UK and Switzerland, Kings shows a <strong>Google-certified consent
+    message (Google User Messaging Platform)</strong> before ads load, so you can allow or
+    refuse personalised advertising. Where you refuse, or outside those regions where
+    required, ads are limited to non-personalised (contextual) ads. You can reopen the
+    consent options from the app&rsquo;s Settings screen where offered, and you can reset or
+    delete your advertising ID in <em>Android Settings &rarr; Privacy &rarr; Ads</em>.
+  </p>
+  <p>
+    Google&rsquo;s use of this data is described in
+    <a href="https://business.safety.google/adsservices/" rel="noopener" target="_blank">How Google uses information from sites or apps that use its services</a>
+    and the
+    <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">Google Advertising</a>
+    policies. Buying the ad-free upgrade stops the AdMob SDK from loading and prevents this
+    collection.
+  </p>
+
+  <h2>4. In-app purchase (&ldquo;Remove ads&rdquo;)</h2>
+  <p>
+    Kings offers a single <strong>one-time, non-consumable purchase</strong> that permanently
+    removes ads. Payment is processed entirely by <strong>Google&nbsp;Play&nbsp;Billing</strong>.
+    We never see or store your card number or billing address. Google provides the app with a
+    purchase token and product identifier so it can confirm and restore your entitlement; the
+    only thing Kings keeps is the on-device &ldquo;remove ads&rdquo; flag described in
+    section&nbsp;2. Purchases are governed by the
+    <a href="https://payments.google.com/legaldocument?family=0.privacynotice" rel="noopener" target="_blank">Google&nbsp;Payments Privacy Notice</a>.
+  </p>
+
+  <h2>5. Analytics and in-app messages (Google Firebase)</h2>
+  <p>
+    Kings uses <strong>Google&nbsp;Firebase</strong> for two purposes:
+  </p>
+  <ul>
+    <li>
+      <strong>Firebase&nbsp;Analytics</strong> &mdash; aggregate, pseudonymous usage statistics
+      (for example app opens, screen views, puzzles started and completed, session length,
+      app version, device model and operating-system version, and coarse region from your IP
+      address), tied to an app-generated <strong>instance identifier</strong> and, where
+      available, the advertising identifier. We use this only to understand how the game is
+      used and to improve it.
+    </li>
+    <li>
+      <strong>Firebase&nbsp;In-App Messaging</strong> &mdash; lets us show occasional messages
+      from the developer inside the app (for example a note about a new version or a change to
+      the game). It uses a <strong>Firebase installation identifier</strong> to fetch the
+      current message and records whether a message was shown, dismissed or tapped.
+    </li>
+  </ul>
+  <p>
+    This data is sent to and processed by Google as our processor and is retained according to
+    our Firebase configuration and
+    <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Google&rsquo;s Firebase privacy and security</a>
+    terms. Analytics collection follows your ad-consent choice where consent mode applies. You
+    can also opt out of Google&rsquo;s ad personalisation and reset the identifiers as described
+    in section&nbsp;3.
+  </p>
+
+  <h2>6. Data processed through Google Play Games Services</h2>
   <p>
     Kings offers optional online leaderboards using <strong>Google&nbsp;Play&nbsp;Games&nbsp;Services</strong>.
     You are only signed in if you choose to be; all single-player features, including the daily
@@ -85,51 +163,74 @@
   </p>
   <p>The legal basis for this processing is your <strong>consent</strong>, given when you sign in. You can withdraw it at any time by signing out or by not using the leaderboards.</p>
 
-  <h2>4. Network permission</h2>
-  <p>
-    Kings requests the <code>INTERNET</code> permission only to communicate with
-    Google&nbsp;Play&nbsp;Games when you use the leaderboards. The app also declares the
-    <code>com.google.android.gms.permission.AD_ID</code> permission for store-configuration
-    compatibility, but <strong>the current version does not use the advertising ID and shows no
-    advertising</strong>.
-  </p>
-
-  <h2>5. What we do not do</h2>
+  <h2>7. Legal bases (EEA / UK)</h2>
   <ul>
-    <li>No advertising or advertising SDKs.</li>
-    <li>No analytics, telemetry, or crash-reporting SDKs.</li>
-    <li>No sale or sharing of personal data.</li>
-    <li>No collection of location, contacts, photos, or device identifiers.</li>
+    <li><strong>Consent</strong> &mdash; personalised advertising, and analytics/messaging where consent mode requires it; Google&nbsp;Play&nbsp;Games sign-in.</li>
+    <li><strong>Legitimate interests</strong> &mdash; showing non-personalised ads, basic fraud/invalid-traffic prevention, and understanding aggregate usage to maintain and improve the game.</li>
+    <li><strong>Performance of a contract</strong> &mdash; processing an in-app purchase and keeping your ad-free entitlement.</li>
   </ul>
 
-  <h2>6. Children</h2>
+  <h2>8. Permissions</h2>
+  <p>
+    Kings requests the <code>INTERNET</code> and network-state permissions to contact Google
+    AdMob, Firebase, Google&nbsp;Play&nbsp;Billing and Google&nbsp;Play&nbsp;Games. It declares the
+    <code>com.google.android.gms.permission.AD_ID</code> permission so the advertising
+    identifier can be used for the advertising and analytics described above. Kings does not
+    request location, camera, microphone, contacts, or storage permissions.
+  </p>
+
+  <h2>9. What we do not do</h2>
+  <ul>
+    <li>We do <strong>not</strong> sell your personal data for money.</li>
+    <li>We do <strong>not</strong> collect your precise location, contacts, photos, files, or the contents of other apps.</li>
+    <li>We do <strong>not</strong> ask you to create an account with us or provide an email address.</li>
+    <li>We do <strong>not</strong> use the on-device data from section&nbsp;2 for advertising.</li>
+  </ul>
+  <p>
+    Note: sharing device and advertising identifiers with Google for personalised advertising
+    may be considered &ldquo;sharing&rdquo; or &ldquo;sale&rdquo; under some US state privacy
+    laws. In the EEA and UK this only happens with your consent; elsewhere, you can limit it
+    through your device&rsquo;s ad settings.
+  </p>
+
+  <h2>10. Children</h2>
   <p>
     Kings is not directed at children under 13 (or under the age of digital consent in your
-    country). We do not knowingly collect personal data from children. Sign-in to
-    Google&nbsp;Play&nbsp;Games is subject to Google&rsquo;s own age requirements.
+    country), is not listed in Google&nbsp;Play&rsquo;s Designed-for-Families programme, and we
+    do not knowingly collect personal data from children. Ads and analytics are configured for
+    a general (non-child) audience. If you believe a child has provided personal data, contact
+    us and we will delete it.
   </p>
 
-  <h2>7. Data retention</h2>
+  <h2>11. Data retention</h2>
   <p>
-    On-device data is kept until you delete it (uninstall or clear app data). Leaderboard data
-    held by Google&nbsp;Play&nbsp;Games is retained and deleted according to Google&rsquo;s policies
-    and your Google account settings.
+    On-device data is kept until you delete it (uninstall or clear app data). Advertising,
+    analytics and in-app-messaging data held by Google is retained and deleted according to
+    Google&rsquo;s policies and our Firebase and AdMob settings (Firebase&nbsp;Analytics event
+    data is retained for a limited period configured in the Firebase console). Leaderboard
+    data held by Google&nbsp;Play&nbsp;Games follows Google&rsquo;s policies and your Google
+    account settings.
   </p>
 
-  <h2>8. International transfers</h2>
+  <h2>12. International transfers</h2>
   <p>
-    Where Google&nbsp;Play&nbsp;Games processes your data, it may be transferred to and stored on
-    servers outside your country, including in the United States, under the safeguards described in
-    Google&rsquo;s Privacy Policy.
+    Google processes data for these services on servers that may be outside your country,
+    including in the United States, under the safeguards (such as the EU&nbsp;Standard
+    Contractual Clauses and the EU&ndash;US Data Privacy Framework) described in Google&rsquo;s
+    Privacy Policy.
   </p>
 
-  <h2>9. Your rights</h2>
+  <h2>13. Your rights</h2>
   <p>
-    If you are in the EEA or UK, you have the right to access, correct, delete, restrict, or object
-    to the processing of your personal data, and to data portability.
+    If you are in the EEA or UK, you have the right to access, correct, delete, restrict, or
+    object to the processing of your personal data, to withdraw consent, and to data
+    portability. Residents of some other regions (for example certain US states) have similar
+    rights, including to opt out of targeted advertising.
   </p>
   <ul>
     <li><strong>On-device data:</strong> change it in the app, or clear the app&rsquo;s storage / uninstall.</li>
+    <li><strong>Advertising:</strong> change your consent choice in the app where offered, buy the ad-free upgrade, or reset / delete your advertising ID in Android settings.</li>
+    <li><strong>Analytics &amp; messaging:</strong> opting out of ad personalisation on your device also limits this processing; you can additionally clear app data to reset the identifiers.</li>
     <li><strong>Play Games data:</strong> manage or delete it through your Google account and the Play&nbsp;Games app.</li>
     <li>For any question or request, contact us at
       <a href="mailto:oudshoorn.jeroen@gmail.com">oudshoorn.jeroen@gmail.com</a>. You also have the right to lodge a
@@ -137,15 +238,14 @@
       <em>Autoriteit&nbsp;Persoonsgegevens</em>).</li>
   </ul>
 
-  <h2>10. Changes to this policy</h2>
+  <h2>14. Changes to this policy</h2>
   <p>
-    We may update this Privacy Policy. Material changes will be reflected by an updated date above
-    and, where appropriate, announced in the app or on the Google&nbsp;Play listing. If a future
-    version of Kings introduces advertising or analytics, this policy and the Google&nbsp;Play Data
-    safety section will be updated before that version is released.
+    We may update this Privacy Policy. Material changes will be reflected by an updated date
+    above and, where appropriate, announced in the app or on the Google&nbsp;Play listing. The
+    Google&nbsp;Play Data&nbsp;safety section is kept consistent with this policy.
   </p>
 
-  <h2>11. Contact</h2>
+  <h2>15. Contact</h2>
   <p>
     xBitsNL&nbsp;Gaming — Jeroen&nbsp;Oudshoorn<br>
     <a href="mailto:oudshoorn.jeroen@gmail.com">oudshoorn.jeroen@gmail.com</a>
