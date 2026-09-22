@@ -1,1 +1,6 @@
+# This is the copy AdMob actually reads: the Play Store listing's Website
+# field points at kings.evemarketscanner.com, which is this GitHub Pages
+# site. An identical copy lives in the eve-market-scanner repo, at
+# static/app-ads.txt, served by the Flask app on the apex domain as a
+# fallback - change the publisher line in both places or they drift apart.
 google.com, pub-2039263177612685, DIRECT, f08c47fec0942fa0
