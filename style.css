@@ -119,3 +119,14 @@ footer {
   font-size: 14px;
   text-align: center;
 }
+
+.store-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--bg);
+  font-weight: 700;
+  text-decoration: none;
+}
+.store-btn:hover, .store-btn:focus-visible { color: var(--bg); filter: brightness(1.12); }
