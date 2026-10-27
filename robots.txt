@@ -1,0 +1,10 @@
+# https://www.rfc-editor.org/rfc/rfc9309
+# Content signals (https://contentsignals.org/):
+#   search:   building a search index and showing links and short excerpts
+#   ai-input: using content as input for AI answers (retrieval, grounding)
+#   ai-train: training or fine-tuning AI models
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+Sitemap: https://kings.xbitsnlgaming.com/sitemap.xml
